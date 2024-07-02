@@ -30,7 +30,6 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 };
 
-////////////////////////////////////////
 /* layout(s) */
 static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
@@ -65,7 +64,6 @@ static const char *upvol[]       =  { "/usr/bin/pactl", "set-sink-volume", "@DEF
 static const char *downvol[]     =  { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",     NULL };
 static const char *mutevol[]     =  { "/usr/bin/pactl", "set-sink-mute",   "@DEFAULT_SINK@", "toggle",  NULL };
 static const char *micmute[]     =  { "/usr/bin/pactl", "set-source-mute", "@DEFAULT_SOURCE@", "toggle", NULL };
-
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
